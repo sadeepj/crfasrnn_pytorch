@@ -20,6 +20,8 @@ If you use this code/model for your research, please cite the following paper:
 
 ## Installation Guide
 
+_Note_: If you are using a Python virtualenv, make sure it is activated before running each command in this guide.
+
 ### Step 1: Clone the repository
 ```
 $ git clone https://github.com/sadeepj/crfasrnn_pytorch.git
@@ -28,7 +30,6 @@ The root directory of the clone will be referred to as `crfasrnn_pytorch` hereaf
 
 ### Step 2: Install dependencies
 
-**Note**: If you are using a Python virtualenv, make sure it is activated before running each command in this guide.
 
 Use the `requirements.txt` file in this repository to install all the dependencies via `pip`:
 ```
