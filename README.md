@@ -63,3 +63,8 @@ $ cd crfasrnn_pytorch
 $ python run_demo.py
 ```
 If all goes well, you will see the segmentation results in a file named "labels.png".
+
+## Contributors
+* Sadeep Jayasumana ([sadeepj](https://github.com/sadeepj))
+* Harsha Ranasinghe ([HarshaPrabhath](https://github.com/HarshaPrabhath))
+
