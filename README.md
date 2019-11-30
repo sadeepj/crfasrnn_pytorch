@@ -54,7 +54,7 @@ Note that the `python` command in the console should refer to the Python interpr
 
 ### Step 4: Download the pre-trained model weights
 
-Download the model weights from [here](https://goo.gl/ciEYZi) or [here](https://github.com/sadeepj/crfasrnn_keras/releases/download/v1.0/crfrnn_keras_model.h5) and place it in the `crfasrnn_pytorch` directory with the file name `crfasrnn_weights.pth`.
+Download the model weights from [here](https://github.com/sadeepj/crfasrnn_pytorch/releases/download/0.0.1/crfasrnn_weights.pth) and place it in the `crfasrnn_pytorch` directory with the file name `crfasrnn_weights.pth`.
 
 ### Step 5: Run the demo
 ```
