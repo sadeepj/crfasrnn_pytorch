@@ -33,15 +33,18 @@ from crfasrnn.crfasrnn_model import CrfRnnNet
 def main():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--weights', help='Path to the .pth file (download from https://goo.gl/ciEYZi)',
-                        required=True)
-    parser.add_argument('--image', help='Path to the input image', required=True)
-    parser.add_argument('--output', help='Path to the output label image', default=None)
+    parser.add_argument(
+        "--weights",
+        help="Path to the .pth file (download from https://tinyurl.com/crfasrnn-weights-pth)",
+        required=True,
+    )
+    parser.add_argument("--image", help="Path to the input image", required=True)
+    parser.add_argument("--output", help="Path to the output label image", default=None)
     args = parser.parse_args()
 
     img_data, img_h, img_w, size = util.get_preprocessed_image(args.image)
 
-    output_file = args.output or args.imaage + '_labels.png'
+    output_file = args.output or args.imaage + "_labels.png"
 
     model = CrfRnnNet()
     model.load_state_dict(torch.load(args.weights))
@@ -53,5 +56,5 @@ def main():
     label_im.save(output_file)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

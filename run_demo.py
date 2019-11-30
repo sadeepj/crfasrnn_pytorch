@@ -28,14 +28,14 @@ from crfasrnn.crfasrnn_model import CrfRnnNet
 
 
 def main():
-    input_file = 'image.jpg'
-    output_file = 'labels.png'
+    input_file = "image.jpg"
+    output_file = "labels.png"
 
     # Read the image
     img_data, img_h, img_w, size = util.get_preprocessed_image(input_file)
 
-    # Download the model from https://goo.gl/ciEYZi
-    saved_weights_path = 'crfasrnn_weights.pth'
+    # Download the model from https://tinyurl.com/crfasrnn-weights-pth
+    saved_weights_path = "crfasrnn_weights.pth"
 
     model = CrfRnnNet()
     model.load_state_dict(torch.load(saved_weights_path))
@@ -47,5 +47,5 @@ def main():
     label_im.save(output_file)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
